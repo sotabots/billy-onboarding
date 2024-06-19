@@ -25,7 +25,9 @@
         "dev:bot": "turbo run dev --scope @tok/bot",
         "*** other *** ": "",
         "build:all": "turbo run build",
-        "compress": "turbo run compress --scope @tok/compress"
+        "compress": "turbo run compress --scope @tok/compress",
+        "predeploy": "turbo run build --scope @tok/app",
+		"deploy": "gh-pages -d app/dist"
     },
     "devDependencies": {
         "prettier": "^2.7.1",
@@ -38,5 +40,8 @@
         "bot",
         "examples/*",
         "packages/*"
-    ]
+    ],
+    "dependencies": {
+        "gh-pages": "^6.1.1"
+    }
 }
