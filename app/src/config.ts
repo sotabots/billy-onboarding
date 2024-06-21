@@ -8,11 +8,12 @@ export default defineConfig({
       slides: [
         // intro
 
-        // image
+        // 1
         {
           media: {
             type: 'image',
             src: import('./assets/img/logo_koala_no_background.png'),
+            size: 250,
           },
           shape: 'rounded',
           pagination: 'count',
@@ -21,11 +22,11 @@ export default defineConfig({
           button: 'ДА КТО ТАКОЙ ВАШ ЭТОТ БИЛЛИ?! ',
         },
 
-        // sticker
+        // 2
         {
           media: {
-            type: 'sticker',
-            src: import('./assets/stickers/utya_sending_message.tgs'),
+            type: 'image',
+            src: import('./assets/img/buble_message.webp'),
             size: 250,
           },
           shape: 'square',
@@ -33,10 +34,10 @@ export default defineConfig({
           title: 'Революционная запись трат',
           description:
             'Меня достаточно добавить в ваш чат с друзьями. Траты можно записывать как текстом, так и голосовыми сообщениями! Я найду эти сообщения в чате и всё учту.',
-          button: 'Next',
+          button: 'ТОП-3 проблемы группового расчёта',
         },
 
-        // sticker
+        // 3
         {
           media: {
             type: 'sticker',
@@ -45,99 +46,55 @@ export default defineConfig({
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Не нужно устанавливать приложение!',
+          title: 'Надоело переводить друг другу деньги после каждой общей оплаты и напоминать об этом?',
           description:
-            'Всё в телеграме, <b>добавляй бота в чат</b> и пользуйся его возможностями вместе с друзьями!',
-          button: 'Next',
+            'Достаточно, чтобы кто-то один написал о трате в чат – бот это увидит и запишет в историю. В конце периода я просуммирую все траты и скажу, кто кому сколько должен.',
+          button: 'Проблема 2',
         },
 
-        // form
+        // 4
         {
-          extends: 'form', // note, it's important to extend from 'form' here
           media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_spy.tgs'),
-            size: 150,
+            type: 'image',
+            src: import('./assets/img/cashback.webp'),
+            size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Forms',
-          description: 'User fills in the form – the bot receives the data',
-          form: [
-            {
-              id: 'text_from_form',
-              placeholder: 'Text input',
-              type: 'text',
-            },
-            {
-              id: 'number_from_form',
-              placeholder: 'Number input',
-              type: 'number',
-            },
-            {
-              id: 'checkbox_from_form',
-              placeholder: 'Checkbox',
-              type: 'checkbox',
-            },
-          ],
-          button: 'Next',
-        },
-
-        // video
-        {
-          media: {
-            type: 'video',
-            src: import('./assets/videos/spongebob.mp4'),
-            poster: import('./assets/img/spongebob_poster.webp'),
-            style: 'aspect-ratio: 400/287', // here we manually set video aspect-ratio (default is 16:9)
-          },
-          shape: 'rounded',
-          pagination: 'count',
-          title: 'Videos',
+          title: 'Никто не хочет брать ответственность за оплату общих расходов?',
           description:
-            "Typically, video starts <b>automatically</b><br><br>However, on iOS, it will only autoplay upon any prior tap on the page ('Next' button doesn't count). If video doesn't autoplay, user will see preview and pretty animation, inviting them to tap to play the video",
-          button: 'Next',
+            'Плати за друзей - получай кэшбэк в Билли реальными деньгами!',
+          button: 'Проблема 3',
         },
 
-        // list
+        // 5
         {
           media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_juggling.tgs'),
-            size: 150,
+            type: 'image',
+            src: import('./assets/img/late_calculate.webp'),
+            size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Lists',
+          title: 'Не встанем из-за стола, пока не посчитаем, кто сколько съел?',
           description:
-            'Lists can be used to showcase <b>features</b> of your product. Items support customizable icons',
-          list: [
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/guide.svg'),
-                size: 30,
-              },
-              text: 'Some cool feature',
-            },
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/track.svg'),
-                size: 30,
-              },
-              text: 'Some very cool feature',
-            },
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/time.svg'),
-                size: 30,
-              },
-              text: 'Some extremely cool feature',
-            },
-          ],
-          button: 'Next',
+            'Запиши трату сейчас, а друзья заполнят свои доли потом.',
+          button: 'Это всё?',
+        },
+
+        // 6
+        {
+          media: {
+            type: 'image',
+            src: import('./assets/img/late_calculate.webp'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Билли сделает ведение группового бюджета максимально удобным!',
+          description:
+            'Ну, и на последок:\n- Конвертация валют: упростит финальные расчеты, пересчитав все траты в выбранную валюту. Особенно актуально в путешествиях!\n- Категории: Билли автоматически определит и проставит категорию для каждой траты, а в конце предоставит анализ самых больших из них.',
+          button: 'Попробовать записать трату - Мне всё понятно!',
         },
 
         // "everything is customizable" slide
