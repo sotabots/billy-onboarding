@@ -7,31 +7,32 @@ export default defineConfig({
     {
       slides: [
         // intro
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_hello.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Welcome to Telegram Onboarding Kit',
-          description:
-            "Create stunning onboarding and paywall for your Telegram Bot using the full power of Mini Apps<br><br>It's <b>simple</b>, <b>fast</b>, highly <b>customizable</b> and <a href='https://github.com/Easterok/telegram-onboarding-kit' target='_blank'>open-source</a>!",
-          button: 'Next',
-        },
 
         // image
         {
           media: {
             type: 'image',
-            src: import('./assets/img/durov.webp'),
+            src: import('./assets/img/logo_koala_no_background.png'),
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'Onboarding supports many types of content',
+          title: 'Привет, это Билли',
+          description: "Я бот для ведения общих расходов, записи групповых трат и финального расчёта друг с другом в путешествии, в сожительстве, в паре.",
+          button: 'ДА КТО ТАКОЙ ВАШ ЭТОТ БИЛЛИ?! ',
+        },
+
+        // sticker
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/utya_sending_message.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Революционная запись трат',
           description:
-            "Here you can see <b>Image</b>. But it's just the beginning...",
+            'Меня достаточно добавить в ваш чат с друзьями. Траты можно записывать как текстом, так и голосовыми сообщениями! Я найду эти сообщения в чате и всё учту.',
           button: 'Next',
         },
 
@@ -39,14 +40,14 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_love.tgs'),
+            src: import('./assets/stickers/utya_count_ducks.tgs'),
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Telegram stickers',
+          title: 'Не нужно устанавливать приложение!',
           description:
-            'Just download any <b>.tgs</b> sticker from Telegram and use it in your onboardings',
+            'Всё в телеграме, <b>добавляй бота в чат</b> и пользуйся его возможностями вместе с друзьями!',
           button: 'Next',
         },
 
