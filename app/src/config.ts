@@ -16,6 +16,7 @@ export default defineConfig({
             size: 250,
           },
           shape: 'rounded',
+          pagination: 'count',
           title: 'Привет, это Билли',
           description: "Я бот для ведения общих расходов, записи групповых трат и финального расчёта друг с другом в путешествии, в компании, в паре.",
           button: 'ДА КТО ТАКОЙ ЭТОТ ВАШ БИЛЛИ?!',
@@ -29,6 +30,7 @@ export default defineConfig({
             size: 50,
           },
           shape: 'square',
+          pagination: 'count',
           title: 'Революционная запись трат',
           description:
             'Просто добавь меня в ваш чат, чтобы начать пользоваться ботом. Траты можно записывать как текстом, так и голосовыми сообщениями! Я найду эти сообщения в чате и всё учту.',
@@ -43,6 +45,7 @@ export default defineConfig({
             size: 250,
           },
           shape: 'square',
+          pagination: 'count',
           title: 'Надоело переводить друг другу деньги после каждой общей оплаты?',
           description:
             'Достаточно, чтобы кто-то один написал о трате в чат – Билли это увидит и запишет в историю. В конце периода он просуммирует все траты и скажет, кто кому сколько должен.',
@@ -57,6 +60,7 @@ export default defineConfig({
             size: 250,
           },
           shape: 'square',
+          pagination: 'count',
           title: 'Никто не хочет брать ответственность за оплату общих расходов?',
           description:
             'Плати за друзей - получай кэшбэк в Билли реальными деньгами!',
@@ -71,6 +75,7 @@ export default defineConfig({
             size: 250,
           },
           shape: 'square',
+          pagination: 'count',
           title: 'Не встанем из-за стола, пока не посчитаем, кто сколько съел?',
           description:
             'Запиши трату сейчас, а друзья заполнят свои доли потом.',
@@ -85,6 +90,7 @@ export default defineConfig({
             size: 250,
           },
           shape: 'square',
+          pagination: 'count',
           title: 'Самое удобное ведение группового бюджета!',
           description: '',
           list: [
