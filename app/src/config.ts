@@ -13,7 +13,7 @@ export default defineConfig({
           media: {
             type: 'image',
             src: import('./assets/img/logo_koala_no_background.png'),
-            size: 150,
+            size: 250,
           },
           shape: 'rounded',
           title: 'Привет, это Билли',
@@ -26,7 +26,7 @@ export default defineConfig({
           media: {
             type: 'image',
             src: import('./assets/img/buble_message.webp'),
-            size: 150,
+            size: 50,
           },
           shape: 'square',
           title: 'Революционная запись трат',
@@ -40,7 +40,7 @@ export default defineConfig({
           media: {
             type: 'sticker',
             src: import('./assets/stickers/utya_count_ducks.tgs'),
-            size: 150,
+            size: 250,
           },
           shape: 'square',
           title: 'Надоело переводить друг другу деньги после каждой общей оплаты?',
@@ -54,7 +54,7 @@ export default defineConfig({
           media: {
             type: 'image',
             src: import('./assets/img/cashback.webp'),
-            size: 150,
+            size: 250,
           },
           shape: 'square',
           title: 'Никто не хочет брать ответственность за оплату общих расходов?',
@@ -68,7 +68,7 @@ export default defineConfig({
           media: {
             type: 'image',
             src: import('./assets/img/late_calculate.webp'),
-            size: 150,
+            size: 250,
           },
           shape: 'square',
           title: 'Не встанем из-за стола, пока не посчитаем, кто сколько съел?',
@@ -82,7 +82,7 @@ export default defineConfig({
           media: {
             type: 'image',
             src: import('./assets/img/late_calculate.webp'),
-            size: 150,
+            size: 250,
           },
           shape: 'square',
           title: 'Самое удобное ведение группового бюджета!',
