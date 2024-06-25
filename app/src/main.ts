@@ -10,10 +10,21 @@ window.navigation.addEventListener('navigate', (event) => {
   console.log('location changed!', event);
 
   if (event.destination?.url?.includes('finish')) {
-    console.log('send data');
-    // @ts-expect-error ...
-    window.Telegram?.WebApp?.send('finish');
-    // @ts-expect-error ...
-    window.Telegram?.WebApp?.close();
+    console.log('send data...');
+    console.log('window.Telegram?.WebApp', window.Telegram?.WebApp)
+
+    try {
+      // @ts-expect-error ...
+      window.Telegram?.WebApp?.send('finish');
+    } catch (e) {
+      console.error(e);
+    }
+
+    try {
+      // @ts-expect-error ...
+      window.Telegram?.WebApp?.close();
+    } catch (e) {
+      console.error(e);
+    }
   }
 });
