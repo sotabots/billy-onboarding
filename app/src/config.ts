@@ -8,37 +8,6 @@ export default defineConfig({
       slides: [
         // intro
 
-<<<<<<< HEAD
-        // 1
-        {
-          media: {
-            type: 'image',
-            src: import('./assets/img/logo_koala_no_background.png'),
-            size: 250,
-          },
-          shape: 'rounded',
-          pagination: 'count',
-          title: 'Привет, это Билли',
-          description:
-            'Я бот для ведения общих расходов, записи групповых трат и финального расчёта друг с другом в путешествии, в компании, в паре.',
-          button: 'ДА КТО ТАКОЙ ЭТОТ ВАШ БИЛЛИ?!',
-        },
-=======
-        // // 1
-        // {
-        //   media: {
-        //     type: 'image',
-        //     src: import('./assets/img/logo_koala_no_background.png'),
-        //     size: 250,
-        //   },
-        //   shape: 'rounded',
-        //   pagination: 'count',
-        //   title: 'Привет, это Билли',
-        //   description: "Я бот для ведения общих расходов, записи групповых трат и финального расчёта друг с другом в путешествии, в компании, в паре.",
-        //   button: 'ДА КТО ТАКОЙ ЭТОТ ВАШ БИЛЛИ?!',
-        // },
->>>>>>> 198b615 (update onboarding)
-
         // 1
         {
           media: {
