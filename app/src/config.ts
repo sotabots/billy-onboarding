@@ -8,6 +8,7 @@ export default defineConfig({
       slides: [
         // intro
 
+<<<<<<< HEAD
         // 1
         {
           media: {
@@ -22,8 +23,23 @@ export default defineConfig({
             'Я бот для ведения общих расходов, записи групповых трат и финального расчёта друг с другом в путешествии, в компании, в паре.',
           button: 'ДА КТО ТАКОЙ ЭТОТ ВАШ БИЛЛИ?!',
         },
+=======
+        // // 1
+        // {
+        //   media: {
+        //     type: 'image',
+        //     src: import('./assets/img/logo_koala_no_background.png'),
+        //     size: 250,
+        //   },
+        //   shape: 'rounded',
+        //   pagination: 'count',
+        //   title: 'Привет, это Билли',
+        //   description: "Я бот для ведения общих расходов, записи групповых трат и финального расчёта друг с другом в путешествии, в компании, в паре.",
+        //   button: 'ДА КТО ТАКОЙ ЭТОТ ВАШ БИЛЛИ?!',
+        // },
+>>>>>>> 198b615 (update onboarding)
 
-        // 2
+        // 1
         {
           media: {
             type: 'image',
@@ -38,7 +54,7 @@ export default defineConfig({
           button: 'ТОП-3 проблемы группового расчёта',
         },
 
-        // 3
+        // 2
         {
           media: {
             type: 'sticker',
@@ -54,7 +70,7 @@ export default defineConfig({
           button: 'Согласны?',
         },
 
-        // 4
+        // 3
         {
           media: {
             type: 'image',
@@ -70,7 +86,7 @@ export default defineConfig({
           button: 'Узнали?',
         },
 
-        // 5
+        // 4
         {
           media: {
             type: 'image',
@@ -85,7 +101,7 @@ export default defineConfig({
           button: 'Это всё?',
         },
 
-        // 6
+        // 5
         {
           media: {
             type: 'image',
